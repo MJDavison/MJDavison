@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#7d7a7a">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/business_name_text"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textSize="48sp"
+        android:textColor="@android:color/white"/>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:src="@drawable/mjdevelopmentscreenshot"
+        android:contentDescription="@string/workscreenshot" />
+
+
+
+    <ImageView
+        android:id="@+id/phoneNumIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_phone"
+        android:contentDescription="@string/phoneicon" />
+
+    <TextView
+        android:id="@+id/phoneNumText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:layout_toRightOf="@id/phoneNumIcon"
+        android:layout_toEndOf="@id/phoneNumIcon"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColor="@android:color/white"
+        android:text="@string/phoneNumber_text"/>
+
+
+    <LinearLayout
+        android:id="@+id/newsArticles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/phoneNumText"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/what_have_we_been_up_too"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/recently_i_ve_been_working_on_following_the_android_developer_course_android_basics_nanodegree_to_enhance_my_knowledge_of_android_studio_and_android_development"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/whoAmI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignTop="@id/businessDesc"
+        android:layout_above="@id/businessDesc"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textColor="@android:color/white"
+        android:text="@string/who_am_i"
+        android:textSize="34sp"
+        android:textStyle="bold"
+         />
+
+    <TextView
+        android:id="@+id/businessDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/whoAmI"
+        android:paddingRight="16dp"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:paddingBottom="16dp"
+        android:textColor="@android:color/white"
+        android:text="@string/businessDesc_text"
+        android:paddingEnd="16dp"
+        android:layout_toEndOf="@id/whoAmI"/>
+
+
+
+
+
+
+</RelativeLayout>

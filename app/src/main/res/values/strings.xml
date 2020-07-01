@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MJDeveloping</string>
+    <string name="phoneNumber_text">01215 4282431</string>
+    <string name="businessDesc_text">I am a single person working on developing fun and simple apps for enjoyment!</string>
+    <string name="business_name_text">MJDeveloping</string>
+    <string name="who_am_i">Who am I?</string>
+    <string name="what_have_we_been_up_too">What have we been up too?</string>
+    <string name="recently_i_ve_been_working_on_following_the_android_developer_course_android_basics_nanodegree_to_enhance_my_knowledge_of_android_studio_and_android_development">Recently I\'ve been working on following the Android Developer course \'Android Basics NanoDegree\' to enhance my knowledge of Android Studio and Android Development!</string>
+    <string name="workscreenshot">workScreenshot</string>
+    <string name="phoneicon">phoneIcon</string>
+</resources>
